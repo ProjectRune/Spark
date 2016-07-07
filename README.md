@@ -8,19 +8,12 @@ for programming entire clusters with implicit data parallelism and fault-toleran
 
 # Overview
 
-Apache Spark provides programmers with an API centered on a data structure called RDD.
-
 # RDD (Resilient Distributed Dataset)
- - a read-only multiset of data items distributed over a cluster of machines, that is maintained in fault-tolerant way.
-It was developed in response to limitations in the MapReduce cluster computing paradigm, which forces a particular linear dataflow
-structure on distributed programs.
-
-It was developed in response to limitations in the MapReduce cluster computing paradigm, 
-which forces a particular linear dataflow structure on distributed programs: 
-MapReduce programs read input data from disk, 
-map a function across the data, reduce the results of the map, 
-and store reduction results on disk. 
-Spark's RDDs function as a working set for distributed programs that offers a (deliberately) restricted form of distributed shared memory.[2]
+ - Apache Spark provides programmers with an API centered on a data structure called RDD.
+ - It is a read-only multiset of data items distributed over a cluster of machines, that is maintained in fault-tolerant way.
+ - It was developed in response to limitations in the MapReduce cluster computing paradigm, which forces a particular linear dataflow structure on distributed programs.
+ - MapReduce programs read input data from disk, map a function across the data, reduce the results of the map, and store reduction results on disk. 
+ - Spark's RDDs function as a working set for distributed programs that offers a (deliberately) restricted form of distributed shared memory.
 
 # Strong at Iterative algorithms
 
